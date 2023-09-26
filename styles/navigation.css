@@ -84,9 +84,7 @@
         border: solid 2px gray;
         padding: 1rem 1rem;
         color: darkblue;
-        font-weight: 700;
-       
-  
+        font-weight: 700;  
     }
 
     .x{
@@ -124,6 +122,8 @@
         display: flex;
         padding: 1rem 1rem;
         color: var(--main-white);
+        font-size: 1.25rem;
+        font-weight: 700;
     }
 }
 

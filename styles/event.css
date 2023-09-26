@@ -23,6 +23,14 @@
 }
 
 
+main > div:nth-of-type(3){
+    height: 700px;
+    width: 100vw;
+    background-color:  #2a2a8a;
+    color: white;
+}
+
+
 .event-title{
     padding-top: 2rem;
     margin-bottom: 4rem;

@@ -21,20 +21,8 @@ body {
 }
 
 main .section-container{
-    height: 700px;
-
     margin: auto;
 }
 
-main > div:nth-of-type(2){
-    width: 100vw;
-    background-color: white;
-    color: rgb(0, 45, 150);
-    font-weight: 700;
-}
 
-main > div:nth-of-type(3){
-    width: 100vw;
-    background-color:  #000080;
-    color: white;
-}
+
