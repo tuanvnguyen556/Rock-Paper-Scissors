@@ -1,0 +1,32 @@
+.event-container{
+    display: flex;
+    gap: 4rem;
+}
+
+.event-container > div{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-items: center;
+}
+
+.event-container p{
+    text-align: center;
+    width: 105%;
+}
+
+.event-container .fa-solid{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+    color: yellow;
+}
+
+
+.event-title{
+    padding-top: 2rem;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    text-decoration: underline;
+    color: yellow;
+}

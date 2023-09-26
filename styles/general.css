@@ -22,12 +22,19 @@ body {
 
 main .section-container{
     height: 700px;
-    border: 2px solid green;
+
     margin: auto;
 }
 
-/* main div:nth-of-type(2){
+main > div:nth-of-type(2){
     width: 100vw;
-    background-color: rgb(181, 56, 56);
-    color: yellow;
-} */
+    background-color: white;
+    color: rgb(0, 45, 150);
+    font-weight: 700;
+}
+
+main > div:nth-of-type(3){
+    width: 100vw;
+    background-color:  #000080;
+    color: white;
+}
