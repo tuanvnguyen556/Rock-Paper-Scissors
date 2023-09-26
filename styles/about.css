@@ -1,0 +1,32 @@
+
+
+@media (max-width: 800px){
+    .container-image{
+        margin-top: 8rem;
+    }
+
+    main .section-container{
+        width: 95vw;
+        margin-right: 2rem;
+    }
+}
+@media (min-width: 801px){
+    .container-image{
+        margin-top: 5rem;
+    }
+
+    main .section-container{
+        width: 80vw;
+    }
+}
+
+
+.children-group{
+    width: 40vw;
+    height: auto;
+}
+
+.children-group img{
+    height: 100%;
+    width: 100%;
+}

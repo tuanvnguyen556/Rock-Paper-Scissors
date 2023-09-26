@@ -7,6 +7,7 @@
     top: 0;
     align-items: center;
     background: linear-gradient(#ffff19, #0047AB);
+    z-index: 999;
 }
 
 .navigation{
@@ -15,11 +16,10 @@
     height: 100px;
     align-items: center;
     margin: auto;
-    border: 2px solid orange;
 }
 
 .navigation > div {
-    border: 2px solid green;
+
     display: flex;
     align-items: center;
 }
@@ -27,23 +27,25 @@
 #pokemon-image {
     width: 100%;
 }
-@media (max-width: 1149px){
+
+.bars,
+.x{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 30px;
+    margin-right: 4rem;
+}
+
+
+@media (max-width: 800px){
     .header{
         height: 130px;
     }
 
-    .list{
-        display: none;
-    }
-
     .bars{
-        display: flex !important;
-        border: none;
-        background: none;
-        cursor: pointer;
-        margin-left: auto;
-        font-size: 30px;
-        margin-right: 4rem;
+        display: flex;
     }
 
     .navigation > div{
@@ -54,10 +56,47 @@
         margin-right: 2rem;
     }
 
+    .list{
+        position: relative;
+        position: fixed;
+        right: 0;
+        z-index: 999;
+        display: none;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        height: 78rem;
+        background-color: var(--main-blue);
+        opacity: 0.7;
+        width: 15rem;
+        transform-origin: left;
+        list-style: none;
+    }
+
+    .list li:nth-of-type(1) {
+        margin-top: 30rem;
+    }
+
+    .linked{
+        text-decoration: none;
+        display: flex;
+        border: solid 2px gray;
+        padding: 1rem 1rem;
+        color: darkblue;
+        font-weight: 700;
+       
+  
+    }
+
+    .x{
+        position: absolute;
+    }
+
 
 }
 
-@media (min-width: 1150px){
+@media (min-width: 801px){
     .header{
         height: 100px;
     }
@@ -67,36 +106,24 @@
         margin-left: 1rem;
     }
 
-
-    .navigation > nav {
-        border: 2px solid red;
-        display: flex;
-        align-items: center;
-        width: 40%;
-        height: 70px;
-        margin-left: auto;
-        margin-right: 2rem;
+    .bars,
+    .x{
+        display: none;
     }
-    
+
     .list {
-        display: flex;
+        display: flex !important;
         list-style: none;
         gap: 1rem;
         align-items: center;
-        border: 2px solid blue;
         margin-left: auto;
     }
-    
     
     .linked{
         text-decoration: none;
         display: flex;
-        border: solid 2px gray;
         padding: 1rem 1rem;
         color: var(--main-white);
     }
-
-    .bars{
-        display: none;
-    }
 }
+

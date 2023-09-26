@@ -1,13 +1,33 @@
 :root{
     --main-white: #FFFDFA;
+    --main-blue: #89CFF0;
+    --main-yellow: #FFC000;
+    --main-font: "Lato", sans-serif;
 }
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
 }
 
+h1 {
+    text-align: center;
+}
 body {
     width: 100vw;
     height: 100vh;
-    background-color: white;
 }
+
+main .section-container{
+    height: 700px;
+    border: 2px solid green;
+    margin: auto;
+}
+
+/* main div:nth-of-type(2){
+    width: 100vw;
+    background-color: rgb(181, 56, 56);
+    color: yellow;
+} */
