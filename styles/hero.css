@@ -31,6 +31,9 @@
 
 
 @media (max-width: 580px){
+    .container-image{
+        margin-top: 8rem;
+    }
     .hero-background p:nth-of-type(1){
         font-size: 1.5rem;
         margin-bottom: 1rem;
@@ -41,7 +44,7 @@
     }
 
     .hero-background{
-        align-items: center
+        align-items: center;
     }
 
     .hero-background p{
@@ -53,6 +56,9 @@
 
 
 @media (min-width: 581px){
+    .container-image{
+        margin-top: 6rem;
+    }
     .hero-background p:nth-of-type(1){
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
@@ -74,13 +80,18 @@
 
 }
 @media (min-width: 950px){
+    .container-image{
+        margin-top: 6rem;
+    }
     .hero-background p:nth-of-type(1){
         font-size: 3rem;
         margin-bottom: 2rem;
+        text-align: left;
     }
     
     .hero-background p:nth-of-type(2){
         font-size: 1.5rem;
+        text-align: left;
     }
 
     .hero-background{
