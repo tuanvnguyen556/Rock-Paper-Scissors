@@ -7,35 +7,28 @@
 .children-group img{
     border-radius: 100%;
     object-fit: cover;
-    border: 5px solid black;
+    border: 5px solid blue;
 }
 
 .about-descript{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 550px;
     width: 100%;
     background-color: rgb(255, 255, 82);
 
 }
 
 .about-title{
-    margin-top: 4rem;
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
     background-color: rgb(255, 255, 82);
 }
 
 
-
-
 main > div:nth-of-type(2){
-    height: 720px;
     width: 100vw;
     background-color: white;
     color: rgb(0, 34, 113);
-    font-weight: 700;
+
 }
 
 .about-descript p{
@@ -43,31 +36,94 @@ main > div:nth-of-type(2){
 }
 
 @media (max-width: 762px){
+    main .section-container{
+        width: 95vw;
+        margin-right: 2rem;
+    }
 
+    .about-title{
+        margin-top: 2rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
 
+    main > div:nth-of-type(2){
+        height: 700px;
+    }
+
+    .children-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .children-group img{
+        display: absolute;
+        z-index: 2;
+        height: 250px;
+        width: 250px;
+    }
+
+    .about-title{
+        margin-top: 4rem;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-descript{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-descript p{
+        font-size: 1.1rem;
+        padding: 0 1.5rem 1.5rem;
+        max-width: 650px;
+    }
 }
 
 @media (min-width: 763px) and (max-width: 800px){
-    .container-image{
-        margin-top: 8rem;
-    }
 
     main .section-container{
         width: 95vw;
         margin-right: 2rem;
     }
     main > div:nth-of-type(2){
-        height: 820px;
+        height: 620px;
     }
 
+    .children-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+    }
     .children-group img{
         display: absolute;
         z-index: 2;
-        height: 400px;
-        width: 380px;
+        height: 250px;
+        width: 250px;
     }
 
+    .about-title{
+        margin-top: 4rem;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
 
+    .about-descript{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-descript p{
+        font-size: 1.1rem;
+        padding: 0 1.5rem 1.5rem;
+        max-width: 650px;
+    }
 }
 
 @media (min-width: 801px){
@@ -76,30 +132,48 @@ main > div:nth-of-type(2){
     }
 
     main .section-container{
-        width: 80vw;
+        width: 90vw;
     }
 
+    .children-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -1rem;
+        margin-bottom: 2.5rem;
+    }
     .children-group img{
         height: 300px;
         width: 280px;
     }
 
     .about-descript {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        height: 650px;
     }
 
     .about-descript p{
         font-size: 1.3rem;
-        width: 550px;
+        padding: 0 1.5rem;
+        max-width: 750px;
+    }
 
+    .about-title{
+        margin-top: 4rem;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    main > div:nth-of-type(2){
+        height: 820px;
     }
 }
 
 @media (min-width: 1300px){
     .about-descript {
         flex-direction: row;
+        height: 550px;
     }
     main > div:nth-of-type(2){
         height: 720px;
@@ -113,7 +187,17 @@ main > div:nth-of-type(2){
     .about-descript p{
         font-size: 1.5rem;
         width: 750px;
-        margin-right: 5rem;
+        margin-right: -1rem;
         margin-left: 7rem;
+    }
+
+    .about-title{
+        margin-top: 4rem;
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    main > div:nth-of-type(2){
+        height: 720px;
     }
 }
