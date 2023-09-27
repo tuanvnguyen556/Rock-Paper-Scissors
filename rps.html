@@ -24,19 +24,19 @@
                 
                 <ul class="list">
                     <li>
-                        <a class="linked" href="#about">About Us</a>
+                        <a class="linked" href="#About">About Us</a>
                     </li>
                     <li>
-                        <a class="linked" href="#events">Events</a>
+                        <a class="linked" href="#Events">Events</a>
                     </li>
                     <li>
-                        <a class="linked" href="#play">Play</a>
+                        <a class="linked" href="#Play">Play</a>
                     </li>
                     <li>
-                        <a class="linked" href="#donate">Donate</a>
+                        <a class="linked" href="#Donate">Donate</a>
                     </li>
                     <li>
-                        <a class="linked" href="#contact">Contact</a>
+                        <a class="linked" href="#Contact">Contact</a>
                     </li>
                     <button class="x" onclick="buttonBars()">
                         <i class="fa-solid fa-x" style="color: var(--main-yellow);"></i>
@@ -60,7 +60,7 @@
                
             </div>
             <div>
-                <section id="#about" class="section-container">
+                <section id="About" class="section-container">
                     <h1 class="about-title">The Pokemon Foundation</h1>
                     <div class="about-descript">
                         <p>
@@ -78,8 +78,19 @@
                 </section>
             </div>
             <div>
-                <section id="#events" class="section-container">
+                <section id="Events" class="section-container">
                     <h1 class="event-title">Events</h1>
+                    <div class="image-slide">
+                        <div class="left">
+                            <div onclick="goLeft()" class="left-triangle"></div>
+                        </div>
+                        
+                        <img class="display-image" src="images/group-of-children.jpeg">
+                        
+                        <div class="right">
+                            <div onclick="goRight()" class="right-triangle"></div>
+                        </div>
+                    </div>
                     <div class="event-container">
                         <div>
                             <i class="fa-solid fa-handshake"></i>
@@ -109,29 +120,17 @@
                             </p>
                         </div>
                     </div>
-                    <!--
-                    <h1>Get directions to our headquarters</h1>
-    
-                    <div class="rotate-container">
-                        <img src="images/another-group-photo.jpg">
-                        <button onclick="goLeft()" class="left-arrow"><i class="fa-solid fa-less-than"></i></button>
-                        <button onclick="goRight()" class="right-arrow"><i class="fa-solid fa-greater-than"></i></button>
-                    </div>
-    
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6605334212877!2d139.72663167578676!3d35.66073447259388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b828453ffff%3A0xb8603beeb9b150d8!2sRoppongi%20Hills%20Mori%20Tower!5e0!3m2!1sen!2sus!4v1695607345479!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    -->
+                    
                 </section>
             </div>
             <div>
-                <section id="#play" class="section-container"></section>
+                <section id="Play" class="section-container"></section>
             </div>
             <div>
-                <section id="#donate" class="section-container"></section>
+                <section id="Donate" class="section-container"></section>
             </div>
             <div>
-                <section id="#contact" class="section-container"></section>
+                <section id="Contact" class="section-container"></section>
             </div>
             
             <footer>
@@ -139,8 +138,40 @@
             </footer>
         </main>
         <script>
-            function rotateImage(){
-                let imageObject = ["images/another-group-photo.jpg", "images/group-of-children.jpeg"]
+
+            let imageObject = ["images/another-group-photo.jpg", "images/group-of-children.jpeg", "images/02.jpg", "images/group-photo.jpeg"];
+            function goLeft(){
+                let val = JSON.parse(localStorage.getItem("val"));
+                console.log(val);
+                if (val === null){
+                    val = 0;
+                }else{
+                    val = Number(val);
+                }
+                if (val === 0){
+                    val = imageObject.length - 1;
+                } else{
+                    val -= 1;
+                }
+                localStorage.setItem("val", JSON.stringify(val));
+                document.querySelector(".display-image").setAttribute("src", imageObject[val]);
+            }
+
+            function goRight(){
+                let val = JSON.parse(localStorage.getItem("val"));
+                console.log(val);
+                if (val === null){
+                    val = 0;
+                } else{
+                    val = Number(val);
+                }
+                if (val === imageObject.length - 1){
+                    val = 0;
+                } else{
+                    val += 1;
+                }
+                localStorage.setItem("val", JSON.stringify(val));
+                document.querySelector(".display-image").setAttribute("src", imageObject[val]);
             }
             function buttonBars() {
                 const listElement = document.querySelector(".list");

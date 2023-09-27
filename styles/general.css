@@ -20,6 +20,11 @@ body {
     height: 100vh;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
 main .section-container{
     margin: auto;
 }

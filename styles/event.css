@@ -1,5 +1,36 @@
 
+.left-triangle {
+    width: 0;
+    height: 0;
+    border-top: 4rem solid transparent;
+    border-bottom: 4rem solid transparent;
+    border-right: 4rem solid yellow;
+}
+.right-triangle {
+    width: 0;
+    height: 0;
+    border-top: 4rem solid transparent;
+    border-bottom: 4rem solid transparent;
+    border-left: 4rem solid yellow;
+}
 
+.image-slide{
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.left, .right{
+    display: inline-block;
+
+}
+
+.image-slide img{
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+}
 
 .event-container{
     display: flex;
@@ -30,14 +61,18 @@ main > div:nth-of-type(3){
     text-decoration: underline;
     color: yellow;
 }
-@media(max-width: 1023px){
+@media(max-width: 800px){
+
+    .image-slide{
+        margin-left: 3rem;
+    }
     .event-container{
         display: flex;
         flex-direction: column;
     }
 
     main > div:nth-of-type(3){
-        height: 1100px;
+        height: 1400px;
     }
 
     .event-container > div{
@@ -56,16 +91,34 @@ main > div:nth-of-type(3){
         text-align: center;
         width: 90%;
     }
+
+    .left-triangle{
+        border-top: 1.5rem solid transparent;
+        border-bottom: 1.5rem solid transparent;
+        border-right: 1.5rem solid yellow;
+        margin-right: 1rem;
+    }
+
+    .right-triangle{
+        border-top: 1.5rem solid transparent;
+        border-bottom: 1.5rem solid transparent;
+        border-left: 1.5rem solid yellow;
+        margin-left: 1rem;
+    }
+
 }
 
 @media(min-width: 801px) and (max-width: 1023px){
+    .image-slide{
+        margin-left: 5rem;
+    }
     .event-container{
         display: flex;
         flex-direction: column;
     }
 
     main > div:nth-of-type(3){
-        height: 1100px;
+        height: 1400px;
     }
 
     .event-container > div{
@@ -84,16 +137,33 @@ main > div:nth-of-type(3){
         text-align: center;
         width: 90%;
     }
+    .left-triangle{
+        border-top: 2.5rem solid transparent;
+        border-bottom: 2.5rem solid transparent;
+        border-right: 2.5rem solid yellow;
+        margin-right: 1.5rem;
+    }
+
+    .right-triangle{
+        border-top: 2.5rem solid transparent;
+        border-bottom: 2.5rem solid transparent;
+        border-left: 2.5rem solid yellow;
+        margin-left: 1.5rem;
+    }
 }
 
 @media (min-width: 1024px){
+    .image-slide{
+        margin-left: 6rem;
+    }
+
     .event-container{
         display: flex;
         gap: 4rem;
     }
 
     main > div:nth-of-type(3){
-        height: 700px;
+        height: 1200px;
     }
 
     .event-container p{
@@ -112,4 +182,66 @@ main > div:nth-of-type(3){
     .event-title{
         font-size: 4rem;
     }
+
+    .left-triangle{
+        border-top: 2.5rem solid transparent;
+        border-bottom: 2.5rem solid transparent;
+        border-right: 2.5rem solid yellow;
+        margin-right: 1.5rem;
+    }
+
+    .right-triangle{
+        border-top: 2.5rem solid transparent;
+        border-bottom: 2.5rem solid transparent;
+        border-left: 2.5rem solid yellow;
+        margin-left: 1.5rem;
+    }
+}
+
+@media (min-width: 1224px){
+    .image-slide{
+        margin-left: 8rem;
+    }
+
+    .event-container{
+        display: flex;
+        gap: 4rem;
+    }
+
+    main > div:nth-of-type(3){
+        height: 1300px;
+    }
+
+    .event-container p{
+        text-align: center;
+        width: 105%;
+    }
+
+    .event-container > div{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .event-title{
+        font-size: 4rem;
+    }
+
+    .left-triangle{
+        border-top: 4rem solid transparent;
+        border-bottom: 4rem solid transparent;
+        border-right: 4rem solid yellow;
+        margin-right: 1.5rem;
+    }
+
+    .right-triangle{
+        border-top: 4rem solid transparent;
+        border-bottom: 4rem solid transparent;
+        border-left: 4rem solid yellow;
+        margin-left: 1.5rem;
+    }
+
+    
 }
