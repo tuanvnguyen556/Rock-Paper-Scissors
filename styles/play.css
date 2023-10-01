@@ -1,0 +1,14 @@
+main > div:nth-of-type(4){
+    height: 1300px;
+    background-color: blue;
+    width: 100vw;
+}
+
+
+.play-title{
+    font-size: 4rem;
+    color: navy;
+    background-color: white;
+    font-weight: 900;
+    text-decoration: underline;
+}
