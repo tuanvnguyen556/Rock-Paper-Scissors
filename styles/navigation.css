@@ -67,7 +67,7 @@
         justify-content: center;
         align-items: center;
         height: 78rem;
-        background-color: var(--main-blue);
+        background-color: rgb(34, 34, 197);
         opacity: 0.7;
         width: 15rem;
         transform-origin: left;
@@ -81,14 +81,18 @@
     .linked{
         text-decoration: none;
         display: flex;
-        border: solid 2px gray;
         padding: 1rem 1rem;
-        color: darkblue;
+        color: white;
         font-weight: 700;  
+        font-size: 1.5rem;
     }
 
     .x{
         position: absolute;
+    }
+
+    .x i{
+        color: white;
     }
 
 
