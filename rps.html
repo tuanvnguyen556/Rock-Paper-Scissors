@@ -15,6 +15,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/5a75e0f2de.js" crossorigin="anonymous"></script>
+        <script src="rps.js" defer></script>
     </head>
     <body>
         
@@ -128,6 +129,32 @@
             <div>
                 <section id="Play" class="section-container">
                     <h1 class="play-title">Grass - Fire - Water</h1>
+                    <div class="contain-game">
+                        <div class="button-selection store-moves">
+                            <button class="drag-buttons grass" draggable="true"><i class="fa-solid fa-road-spikes"></i></button>
+                            <button class="drag-buttons fire" draggable="true"><i class="fa-solid fa-fire"></i></button>
+                            <button class="drag-buttons water" draggable="true"><i class="fa-solid fa-hand-holding-droplet"></i></button>
+                        </div>
+                        <div class="place-move">
+                            <div>
+                                <div class="button-selection made-move">
+                                </div>
+                                <div class="vs">
+                                    vs.
+                                </div>
+                                <div class="computer-move made-move"></div>
+                            </div>
+                            <div class="Results">
+                                <p>The results are...</p>
+                            </div>
+                            
+                        </div>
+                        
+                   
+                    </div>
+                    
+              
+                    </div>
                 </section>
             </div>
             <div>
@@ -143,52 +170,6 @@
 
             </footer>
         </main>
-        <script>
-
-            let imageObject = ["images/another-group-photo.jpg", "images/group-of-children.jpeg", "images/02.jpg", "images/group-photo.jpeg"];
-            function goLeft(){
-                let val = JSON.parse(localStorage.getItem("val"));
-                console.log(val);
-                if (val === null){
-                    val = 0;
-                }else{
-                    val = Number(val);
-                }
-                if (val === 0){
-                    val = imageObject.length - 1;
-                } else{
-                    val -= 1;
-                }
-                localStorage.setItem("val", JSON.stringify(val));
-                document.querySelector(".display-image").setAttribute("src", imageObject[val]);
-            }
-
-            function goRight(){
-                let val = JSON.parse(localStorage.getItem("val"));
-                console.log(val);
-                if (val === null){
-                    val = 0;
-                } else{
-                    val = Number(val);
-                }
-                if (val === imageObject.length - 1){
-                    val = 0;
-                } else{
-                    val += 1;
-                }
-                localStorage.setItem("val", JSON.stringify(val));
-                document.querySelector(".display-image").setAttribute("src", imageObject[val]);
-            }
-            function buttonBars() {
-                const listElement = document.querySelector(".list");
-             
-                if (listElement.style.display === "none" || listElement.style.display === ""){
-                    listElement.style.display = "flex";
-                }
-                else{
-                    listElement.style.display = "none";
-                }
-            }
-        </script>
+       
     </body>
 </html>
