@@ -37,6 +37,9 @@
     margin-right: 4rem;
 }
 
+.linked:hover{
+    color: var(--main-yellow);
+}
 
 @media (max-width: 800px){
     .header{
