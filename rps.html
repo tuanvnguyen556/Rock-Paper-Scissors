@@ -4,6 +4,7 @@
         <title>The Pokémon Foundation</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="x-icon" href="images/6fCLgz-LogoMakr.png">
         <link rel="stylesheet" href="styles/navigation.css">
         <link rel="stylesheet" href="styles/about.css">
         <link rel="stylesheet" href="styles/general.css">
@@ -87,8 +88,10 @@
                         <div class="left">
                             <div onclick="goLeft()" class="left-triangle"></div>
                         </div>
+                        <div class="store-image">
+                            <img class="display-image" src="images/group-of-children.jpeg">
+                        </div>
                         
-                        <img class="display-image" src="images/group-of-children.jpeg">
                         
                         <div class="right">
                             <div onclick="goRight()" class="right-triangle"></div>
@@ -128,7 +131,12 @@
             </div>
             <div>
                 <section id="Play" class="section-container">
-                    <h1 class="play-title">Grass - Fire - Water</h1>
+                    <h1 class="play-title">Elemental Clash</h1>
+                    <div class="game-rules">
+                        <p>
+                            Elemental Clash is an engaging and imaginative game that puts a fiery twist on the classic Rock, Paper, Scissors. In this elemental version, players choose between three powerful elements - Fire, Water, and Grass - each with its own unique strengths and weaknesses. The game combines strategy and quick thinking, offering a fresh and dynamic experience for players of all ages.
+                            The goal of Elemental Clash is to outsmart your opponent by selecting the element that can overcome theirs. Fire defeats Grass, Grass defeats Water, and Water defeats Fire. It's a battle of wits and elemental mastery, where anticipation and strategy play crucial roles in securing victory.</p>
+                    </div>
                     <div class="contain-game">
                         <div class="button-selection store-moves">
                             <button class="drag-buttons grass" draggable="true"><i class="fa-solid fa-road-spikes"></i></button>
@@ -138,6 +146,7 @@
                         <div class="place-move">
                             <div>
                                 <div class="button-selection made-move">
+                                   
                                 </div>
                                 <div class="vs">
                                     vs.
@@ -145,7 +154,7 @@
                                 <div class="computer-move made-move"></div>
                             </div>
                             <div class="Results">
-                                <p>The results are...</p>
+                                <p class="Result-phrase">The results are...</p>
                             </div>
                             
                         </div>

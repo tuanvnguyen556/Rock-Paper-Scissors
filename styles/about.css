@@ -48,7 +48,7 @@ main > div:nth-of-type(2){
     }
 
     main > div:nth-of-type(2){
-        height: 650px;
+        height: 700px;
     }
 
     .children-group{
@@ -91,7 +91,7 @@ main > div:nth-of-type(2){
         margin-right: 2rem;
     }
     main > div:nth-of-type(2){
-        height: 620px;
+        height: 700px;
     }
 
     .children-group{

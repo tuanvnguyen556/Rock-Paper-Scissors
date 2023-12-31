@@ -1,76 +1,17 @@
 main > div:nth-of-type(4){
-    height: 1000px;
-    background-color: blue;
+    background-color: rgb(87, 87, 255);
     width: 100vw;
+    margin-top: -3.4rem;
 }
-
 
 .play-title{
-    font-size: 4rem;
-    color: var(--main-white);
-    font-weight: 900;
-    text-decoration: underline;
-}
-/*This is a container for the main game*/
-.contain-game{
-    display: flex;
-    flex-direction: row;
-    height: 520px;
-    width: 75%;
-    margin: auto;
-    border: 5px solid var(--main-white);
-
-}
-
-/*Container that contains the three move buttons*/
-.store-moves{
-    display: flex;
-    flex-direction: column;
-    background: var(--main-yellow);
-    align-items: center;
-    justify-content: space-around;
-    width: 200px;
-    height: 100%;
-    gap: 0.5rem;
-    border-right: 6px solid var(--main-white);
-
-}
-
-/*Container to insert your move*/
-.place-move{
-    display: flex;
-    height: 45%;
-    flex: 1;
+    color: var(--main-yellow);
+    text-shadow: black 0px 0px 10px;
+    padding: 0;
     width: 100%;
-    align-items: center;
 }
-
-
-
-.made-move, .computer-move{
-    width: 200px;
-    height: 200px;
-    background-color: var(--main-yellow);
-    border: 4px solid var(--main-white);
-    border-radius: 100%;
-    margin-top: 2rem;
-}
-
-.made-move{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.drag-buttons{
-    border-radius: 100%;
-    font-size: 4.5rem;
-    border-style: solid;
-    width: 140px;
-    height: 150px;
-    background-color: var(--main-white);
-
+.store-moves{
+    background: var(--main-yellow);
 }
 
 .drag-buttons.dragged{
@@ -80,28 +21,6 @@ main > div:nth-of-type(4){
 
 .drag-buttons{
     cursor: move;
-}
-
-.place-move{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    height: 100%;
-}
-
-.place-move > div:nth-of-type(1){
-
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.place-move > div:nth-of-type(2){
-
-    width: 100%;
-    height: 200px;
 }
 
 .fa-road-spikes{
@@ -118,14 +37,416 @@ main > div:nth-of-type(4){
 
 .vs{
     text-align: center;
-    color: var(--main-white);
-    font-size: 3rem;
+    color: black;
 }
 
 .Results{
-    padding-top: 2rem;
-    text-align: center;
-    vertical-align: center;
-    color: var(--main-white);
-    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: var(--main-yellow);
+    border: solid 4px black;
 }
+
+
+.contain-game{
+    border: 5px solid black;
+    margin: auto;
+}
+
+.drag-buttons{
+    background-color: var(--main-white);
+}
+
+.made-move, .computer-move{
+    background-color: var(--main-yellow);
+}
+
+.game-rules{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.game-rules p{
+    text-align: center;
+}
+
+@media(max-width: 800px){
+    main > div:nth-of-type(4){
+        height: 1240px;
+    }
+        
+    .play-title{
+        font-size: 3rem;
+        font-weight: 900;
+        padding-top: 2rem;
+        
+    }
+
+    .contain-game{
+        display: flex;
+        flex-direction: column;
+        height: 540px;
+        width: 95%;
+    }
+
+    .store-moves{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 200px;
+        gap: 0.5rem;
+        border-bottom: 5px solid black;
+    }
+
+    .place-move > div:nth-of-type(1){
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .place-move{
+        display: flex;
+        height: 45%;
+        flex: 1;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .made-move, .computer-move{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        margin-top: 2rem;
+        border: 4px solid black;
+    }
+    
+    .made-move{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .drag-buttons{
+        border-radius: 100%;
+        font-size: 4.5rem;
+        border: 4px solid black;
+        width: 120px;
+        height: 120px;
+    
+    }
+    .Results{     
+        font-size: 4rem;
+        margin-top: 3rem;
+        width: 100%;
+        height: 100px;
+        border-style:none;
+        border-top: 4px solid black;
+    }
+
+    .Results p{
+        font-size: 2.5rem;
+    }
+
+    .vs{
+        font-size: 3rem;
+    }
+
+    .game-rules p{
+        color: white;
+        text-shadow: black 0px 0px 10px;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1023px){
+    main > div:nth-of-type(4){
+        height: 1100px;
+    }
+        
+    .play-title{
+        font-size: 3rem;
+        font-weight: 900;
+        
+    }
+
+    .contain-game{
+        display: flex;
+        flex-direction: column;
+        height: 579px;
+        width: 80%;
+    }
+
+    .store-moves{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 200px;
+        gap: 0.5rem;
+        border-bottom: 5px solid black;
+    }
+
+    .place-move > div:nth-of-type(1){
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+
+    .place-move{
+        display: flex;
+        height: 45%;
+        flex: 1;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .made-move, .computer-move{
+        width: 170px;
+        height: 170px;
+        border-radius: 100%;
+        margin-top: 2rem;
+        border: 4px solid black;
+    }
+    
+    .made-move{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .drag-buttons{
+        border-radius: 100%;
+        font-size: 4.5rem;
+        border: 4px solid black;
+        width: 140px;
+        height: 150px;
+    
+    }
+    .Results{     
+        font-size: 4rem;
+        margin-top: 3rem;
+        width: 100%;
+        height: 120px;
+        border-style:none;
+        border-top: 4px solid black;
+    }
+
+    .Results p{
+        font-size: 2.5rem;
+    }
+
+    .vs{
+        font-size: 3rem;
+    }
+    .game-rules p{
+        color: white;
+        text-shadow: black 0px 0px 10px;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1024px){
+    main > div:nth-of-type(4){
+        height: 1100px;
+    }
+        
+    .play-title{
+        font-size: 3rem;
+        font-weight: 900;
+        padding-top: 3rem;
+        
+    }
+
+    .contain-game{
+        display: flex;
+        flex-direction: column;
+        height: 570px;
+        width: 75%;
+    }
+
+    .store-moves{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 200px;
+        gap: 0.5rem;
+        border-bottom: 5px solid black;
+    }
+
+    .place-move > div:nth-of-type(1){
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+
+    .place-move{
+        display: flex;
+        height: 45%;
+        flex: 1;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .made-move, .computer-move{
+        width: 170px;
+        height: 170px;
+        border-radius: 100%;
+        margin-top: 2rem;
+        border: 4px solid black;
+    }
+    
+    .made-move{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .drag-buttons{
+        border-radius: 100%;
+        font-size: 4.5rem;
+        border: 4px solid black;
+        width: 140px;
+        height: 150px;
+    
+    }
+    .Results{
+        margin-top: 2rem;
+        width: 60%;
+        height: 100px;
+    }
+    .Results p {
+        padding: 0;
+        font-size: 2.5rem;
+    }
+
+    .vs{
+        font-size: 3rem;
+    }
+    .game-rules p{
+        color: white;
+        text-shadow: black 0px 0px 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1224px){
+    main > div:nth-of-type(4){
+        height: 1000px;
+    }
+        
+    .play-title{
+        font-size: 4rem;
+        font-weight: 900;
+        padding-top: 3rem;
+        
+    }
+
+    .contain-game{
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        width: 70%;
+    }
+
+    .store-moves{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 200px;
+        height: 100%;
+        gap: 0.5rem;
+        border-bottom: none;
+        border-right: 5px solid black;
+    }
+
+    .place-move > div:nth-of-type(1){
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+
+    .place-move{
+        display: flex;
+        height: 45%;
+        flex: 1;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .made-move, .computer-move{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin-top: 2rem;
+        border: 4px solid black;
+    }
+    
+    .made-move{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .drag-buttons{
+        border-radius: 100%;
+        font-size: 4.5rem;
+        border: 4px solid black;
+        width: 140px;
+        height: 150px;
+    
+    }
+    .Results{
+        margin-top: 3rem;
+        width: 60%;
+        height: 200px;
+    }
+    .Results p {
+        padding: 0;
+        font-size: 2.3rem;
+    }
+    .vs{
+        font-size: 3rem;
+    }
+
+    .game-rules p{
+        color: white;
+        text-shadow: black 0px 0px 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    
+}
+    

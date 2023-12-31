@@ -1,4 +1,13 @@
 
+
+
+.store-image .display-image{
+    object-fit: cover;
+    border: 0.5rem solid white;
+    width: 100%;
+    height: 100%;
+}
+
 .left-triangle {
     width: 0;
     height: 0;
@@ -19,6 +28,7 @@
     margin-bottom: 3rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .left, .right{
@@ -34,53 +44,42 @@
 .right-triangle:hover{
     border-left-color: rgb(255, 255, 120);
 }
-.image-slide img{
-    display: inline-block;
-    width: 80%;
-    height: 100%;
-}
 
 .event-container{
     display: flex;
-    gap: 4rem;
-    justify-items: center;
 }
-
-
 
 .event-container .fa-solid{
     text-align: center;
-    font-size: 4rem;
-    margin-bottom: 2.5rem;
+    font-size: 3.7rem;
+    margin-bottom: 2rem;
     color: yellow;
 }
 
 
 main > div:nth-of-type(3){
     width: 100vw;
-    background-color:  #2a2a8a;
+    background-color:  #343461;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 
 .event-title{
-    padding-top: 2rem;
-    margin-bottom: 4rem;
-    text-decoration: underline;
     color: yellow;
+    text-shadow: black 0px 0px 10px;
 }
 @media(max-width: 800px){
-
-    .image-slide{
-        margin-left: 3rem;
-    }
     .event-container{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     main > div:nth-of-type(3){
-        height: 1500px;
+        height: 1700px;
     }
 
     .event-container > div{
@@ -89,15 +88,20 @@ main > div:nth-of-type(3){
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: rgb(40, 40, 255);
+        margin-bottom: 2rem;
+        width: 80%;
     }
 
     .event-title{
         font-size: 2.5rem;
+        margin-top: -5rem;
     }
 
     .event-container p{
         text-align: center;
         width: 90%;
+        text-shadow: black 0px 0px 10px;
     }
 
     .left-triangle{
@@ -113,20 +117,27 @@ main > div:nth-of-type(3){
         border-left: 1.5rem solid yellow;
         margin-left: 1rem;
     }
-
+    .image-slide .store-image{
+        width: 400px;
+        height: 300px;
+        display: flex;
+        justify-content: center;  
+    }
+    .fa-handshake, .fa-magnifying-glass, .fa-screwdriver-wrench{
+        margin-top: 2rem;
+    }
 }
 
 @media(min-width: 801px) and (max-width: 1023px){
-    .image-slide{
-        margin-left: 5rem;
-    }
     .event-container{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     main > div:nth-of-type(3){
-        height: 1550px;
+        height: 1750px;
     }
 
     .event-container > div{
@@ -135,6 +146,10 @@ main > div:nth-of-type(3){
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: rgb(40, 40, 255);
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+        width: 80%;
     }
 
     .event-title{
@@ -144,6 +159,7 @@ main > div:nth-of-type(3){
     .event-container p{
         text-align: center;
         width: 90%;
+        text-shadow: black 0px 0px 10px;
     }
     .left-triangle{
         border-top: 2.5rem solid transparent;
@@ -158,12 +174,18 @@ main > div:nth-of-type(3){
         border-left: 2.5rem solid yellow;
         margin-left: 1.5rem;
     }
-}
 
-@media (min-width: 1024px){
-    .image-slide{
-        margin-left: 6rem;
+    .image-slide .store-image{
+        width: 700px;
+        height: 450px;
+        display: flex;
+        justify-content: center;  
     }
+    .fa-handshake, .fa-magnifying-glass, .fa-screwdriver-wrench{
+        margin-top: 2rem;
+    }
+}
+@media (min-width: 1024px){
 
     .event-container{
         display: flex;
@@ -171,24 +193,29 @@ main > div:nth-of-type(3){
     }
 
     main > div:nth-of-type(3){
-        height: 1300px;
+        height: 1600px;
     }
 
     .event-container p{
         text-align: center;
-        width: 105%;
+        width: 100%;
+        height: 450px;
+        text-shadow: black 0px 0px 10px;
     }
 
     .event-container > div{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: rgb(40, 40, 255);
+        padding: 0 2rem;
     }
 
     .event-title{
         font-size: 4rem;
+        margin-top: -5rem;
     }
 
     .left-triangle{
@@ -203,12 +230,27 @@ main > div:nth-of-type(3){
         border-bottom: 2.5rem solid transparent;
         border-left: 2.5rem solid yellow;
         margin-left: 1.5rem;
+    }
+
+    .image-slide .store-image{
+        width: 800px;
+        height: 550px;
+        display: flex;
+        justify-content: center;  
+    }
+
+    .fa-handshake, .fa-magnifying-glass, .fa-screwdriver-wrench{
+        margin-top: 2rem;
     }
 }
 
 @media (min-width: 1224px){
-    .image-slide{
-        margin-left: 8rem;
+
+    .image-slide .store-image{
+        width: 1000px;
+        height: 650px;
+        display: flex;
+        justify-content: center;  
     }
 
     .event-container{
@@ -217,12 +259,14 @@ main > div:nth-of-type(3){
     }
 
     main > div:nth-of-type(3){
-        height: 1300px;
+        height: 1600px;
     }
 
     .event-container p{
         text-align: center;
         width: 105%;
+        height: 400px;
+        text-shadow: black 0px 0px 10px;
     }
 
     .event-container > div{
@@ -231,25 +275,31 @@ main > div:nth-of-type(3){
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: rgb(40, 40, 255);
+        padding: 0 2rem;
     }
 
     .event-title{
         font-size: 4rem;
+        margin-top: -5rem;
     }
 
     .left-triangle{
         border-top: 4rem solid transparent;
         border-bottom: 4rem solid transparent;
         border-right: 4rem solid yellow;
-        margin-right: 1.5rem;
+     
     }
 
     .right-triangle{
         border-top: 4rem solid transparent;
         border-bottom: 4rem solid transparent;
         border-left: 4rem solid yellow;
-        margin-left: 1.5rem;
+       
     }
 
+    .fa-handshake, .fa-magnifying-glass, .fa-screwdriver-wrench{
+        margin-top: 2rem;
+    }
     
 }

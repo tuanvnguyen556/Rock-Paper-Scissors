@@ -34,14 +34,22 @@
     cursor: pointer;
     margin-left: auto;
     font-size: 30px;
+}
+
+.bars{
     margin-right: 4rem;
+}
+
+.x{
+    margin-left: -10rem;
 }
 
 .linked:hover{
     color: var(--main-yellow);
 }
 
-@media (max-width: 800px){
+
+@media (max-width: 850px){
     .header{
         height: 130px;
     }
@@ -101,7 +109,7 @@
 
 }
 
-@media (min-width: 801px){
+@media (min-width: 851px){
     .header{
         height: 100px;
     }
