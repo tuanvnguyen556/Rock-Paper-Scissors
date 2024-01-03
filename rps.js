@@ -147,3 +147,24 @@ containers.forEach(container => {
         }
     })
 })
+
+let sections = document.querySelectorAll('.section-container');
+
+let navLinks = document.querySelectorAll('ul li a');
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top= window.scrollY;
+        let offset = sec.offsetTop- 200;
+        let id = sec.getAttribute('id');
+  
+        if (top >= offset){
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                console.log(id);
+                document.querySelector('ul li a[href*=' + id +']').classList.add
+                ('active');
+            });
+        };
+    });
+};

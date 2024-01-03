@@ -1,0 +1,4 @@
+main > div:nth-of-type(6){
+    height: 1600px;
+    background-color: blue;
+}

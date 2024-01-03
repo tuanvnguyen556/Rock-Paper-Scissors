@@ -42,4 +42,13 @@ main .section-container{
 }
 
 
+.hidden-image{
+    position: fixed;
+    z-index: -10;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+    
+}
+
 
