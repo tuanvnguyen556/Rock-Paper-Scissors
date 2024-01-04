@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Pokémon Foundation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="x-icon" href="images/6fCLgz-LogoMakr.png">
+        <link rel="stylesheet" href="styles/contact.css">
+        <link rel="stylesheet" href="styles/navigation.css">
+        <link rel="stylesheet" href="styles/about.css">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/hero.css">
+        <link rel="stylesheet" href="styles/donate.css">
+        <link rel="stylesheet" href="styles/event.css">
+        <link rel="stylesheet" href="styles/play.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5a75e0f2de.js" crossorigin="anonymous"></script>
+        <script src="rps.js" defer></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="navigation">
+                <div>
+                    <img src="images/9FRPBR-LogoMakr.png" alt="pokemon image" id="pokemon-image">
+                </div>
+                
+                <ul class="list">
+                    <li>
+                        <a class="linked active" href="#About">About Us</a>
+                    </li>
+                    <li>
+                        <a class="linked" href="#Events">Events</a>
+                    </li>
+                    <li>
+                        <a class="linked" href="#Play">Play</a>
+                    </li>
+                    <li>
+                        <a class="linked" href="#Donate">Donate</a>
+                    </li>
+                    <li>
+                        <a class="linked" href="#Contact">Contact</a>
+                    </li>
+                    <button class="x" onclick="buttonBars()">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </ul>
+                <button class="bars" onclick="buttonBars()" href="#">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;">
+                </i></button>
+            </div>
+        </div>
+        <main>
+            <div class="container-image">
+                <div class="hero-background">
+                    <p>Take the initiative to catch them all</p>
+                    <p>The Pokemon Foundation is a nonprofit that aides with children's 
+                        quest to trade and collect their favorite Pokemon</p>
+                </div>
+                <img src="images/group-photo.jpeg">
+                
+            </div>
+            <div>
+                <section id="About" class="section-container">
+                    <h1 class="about-title">The Pokemon Foundation</h1>
+                    <div class="about-descript">
+                        <p>
+                            Welcome to the Pokémon Foundation, where our passion for Pokémon knows no bounds! We are a dedicated 
+                            team of trainers, volunteers, and enthusiasts who have come together to further connect children and their passion 
+                            with Pokemon card trading. Our mission is to spread the joys of Pokémon with children all across the world, 
+                            support children with collecting their favorite pokemon cards, and promote this safe community for children.
+                            Without your kind donations and immense support, we would not be able to set up these amazing events! 
+                        </p>
+                        <div class="children-group">
+                            <img src="images/02.jpg">
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+            <div>
+                <section id="Events" class="section-container">
+                    <h1 class="event-title">Events</h1>
+                    <div class="image-slide">
+                        <div class="left">
+                            <div onclick="goLeft()" class="left-triangle"></div>
+                        </div>
+                        <div class="store-image">
+                            <img class="display-image" src="images/group-of-children.jpeg">
+                        </div>
+                        
+                        
+                        <div class="right">
+                            <div onclick="goRight()" class="right-triangle"></div>
+                        </div>
+                    </div>
+                    <div class="event-container">
+                        <div>
+                            <i class="fa-solid fa-handshake"></i>
+                            <p>
+                                Children can bring their Pokemon card collections to the event and participate in card trading 
+                                sessions. This allows them to interact with other kids, build their decks, and learn strategy. 
+                                Organizing friendly Pokemon card battles is also a popular activity where children can 
+                                test their skills against one another.
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>
+                                A Pokemon-themed scavenger hunt can be a thrilling activity for children. Participants are
+                                given a list of Pokemon to find hidden around the event venue. Each Pokemon can be represented 
+                                by a picture or a small figurine. When a child finds one, they can mark it off their list.
+                                Prizes or small rewards can be given to those who complete the hunt.
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <p>
+                                Creative activities like Pokemon-themed arts and crafts workshops excite children.
+                                They can make their own Pokemon masks, draw Pokemon characters, or paint rocks to resemble 
+                                their favorite Pokemon. These workshops allow kids to express their creativity while staying
+                                true to the theme.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+            <div>
+                <section id="Play" class="section-container">
+                    <h1 class="play-title">Elemental Clash</h1>
+                    <div class="game-rules">
+                        <p>
+                            Elemental Clash is an engaging and imaginative game that puts a fiery twist on the classic Rock, Paper, Scissors. 
+                            In this elemental version, players choose between three powerful elements - Fire, Water, and Grass - each with its
+                            own unique strengths and weaknesses. The game combines strategy and quick thinking, offering a fresh and dynamic 
+                            experience for players of all ages. The goal of Elemental Clash is to outsmart your opponent by selecting the 
+                            element that can overcome theirs. Fire defeats Grass, Grass defeats Water, and Water defeats Fire. 
+                            It's a battle of wits and elemental mastery, where anticipation and strategy play crucial roles in 
+                            securing victory. To play, drag one of the icons into the left most orange circle. The right orange circle will display
+                            the computer's move.
+                        </p>
+                    </div>
+                    <div class="contain-game">
+                        <div class="button-selection store-moves">
+                            <button class="drag-buttons grass" draggable="true"><i class="fa-solid fa-road-spikes"></i></button>
+                            <button class="drag-buttons fire" draggable="true"><i class="fa-solid fa-fire"></i></button>
+                            <button class="drag-buttons water" draggable="true"><i class="fa-solid fa-hand-holding-droplet"></i></button>
+                        </div>
+                        <div class="place-move">
+                            <div>
+                                <div class="button-selection made-move">
+                                   
+                                </div>
+                                <div class="vs">
+                                    vs.
+                                </div>
+                                <div class="computer-move made-move"></div>
+                            </div>
+                            <div class="Results">
+                                <p class="Result-phrase">The results are...</p>
+                            </div>
+                            
+                        </div>
+                        
+                   
+                    </div>
+                    
+              
+                    </div>
+                </section>
+            </div>
+            <img class="hidden-image" src="images/group-photo.jpeg">
+            <div>
+                <section id="Donate" class="section-container">
+                   <form class="donate-form">
+                        <input class="donate-input" placeholder="$50"/>
+                        <button type="submit" class="donate-button">
+                            Donate
+                        </button>
+                   </form>
+                </section>
+            </div>
+            <div>
+                <section id="Contact" class="section-container"></section>
+            </div>
+            
+            <footer>
+
+            </footer>
+        </main>
+       
+    </body>
+</html>
