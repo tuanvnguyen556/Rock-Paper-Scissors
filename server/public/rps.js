@@ -189,7 +189,7 @@ if (money.value >= 5){
             }
         ).then(({ url }) => {
             window.location = url
-        }).catch(e => console.log(e)
+        }).catch(e => console.log(e
         )
     
     })
