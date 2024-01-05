@@ -126,7 +126,7 @@ draggables.forEach(draggable => {
                 console.log("computer is last");
             }
             computerContainer.appendChild(newButton);
-        } else if (storedMove.childElementCount == 3){
+        } else if (storedMove.childElementCount == 3) {
             changeText.innerText = "The Results are...";
         }
         draggable.classList.remove("dragged");
@@ -154,17 +154,43 @@ let navLinks = document.querySelectorAll('ul li a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
-        let top= window.scrollY;
-        let offset = sec.offsetTop- 200;
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 200;
         let id = sec.getAttribute('id');
-  
-        if (top >= offset){
+
+        if (top >= offset) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
-                console.log(id);
-                document.querySelector('ul li a[href*=' + id +']').classList.add
-                ('active');
+                document.querySelector('ul li a[href*=' + id + ']').classList.add
+                    ('active');
             });
         };
     });
 };
+
+let payButton = document.querySelector(".donate-button");
+let money = document.querySelector(".donate-input")
+
+if (money.value >= 5){
+    payButton.addEventListener("click", () => {
+        fetch("/create-checkout-session", {
+            method: 'POST',
+            body: JSON.stringify({
+                item: [{price_data: {currency: 'usd', product_data: {name: "Donation"}, unit_amount: money.value * 100}, quantity: 1}]
+            }),
+            headers: {
+                "Content-Type": 'application/json'
+            }
+            
+        }).then(
+            res => {
+                if (res.ok) return res.json();
+                return res.json().then(json => Promise.reject(json));
+            }
+        ).then(({ url }) => {
+            window.location = url
+        }).catch(e => console.log(e)
+        )
+    
+    })
+}
