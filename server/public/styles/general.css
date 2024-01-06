@@ -1,4 +1,4 @@
-:root{
+:root {
     --main-white: #FFFDFA;
     --main-blue: #89CFF0;
     --main-yellow: #FFC000;
@@ -13,42 +13,53 @@
 h1 {
     text-align: center;
 }
+
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
 }
 
-main .section-container{
+main .section-container {
     margin: auto;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 
     width: 15px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background-color: white;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: yellow;
 }
 
 
-.hidden-image{
+.hidden-image {
     position: fixed;
     z-index: -10;
     bottom: 0;
-    width: 100vw;
-    height: auto;
-    
+
 }
 
+@media (max-width: 830px) {
+    .hidden-image {
+        width: 850px;
+        height: auto;
+    }
+}
 
+@media (min-width: 831px) {
+    .hidden-image {
+        width: 100%;
+        height: auto;
+    }
+}
