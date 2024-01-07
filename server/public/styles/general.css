@@ -50,14 +50,14 @@ main .section-container {
 
 }
 
-@media (max-width: 830px) {
+@media (max-width: 1200px) {
     .hidden-image {
-        width: 850px;
+        width: 1150px;
         height: auto;
     }
 }
 
-@media (min-width: 831px) {
+@media (min-width: 1201px) {
     .hidden-image {
         width: 100%;
         height: auto;

@@ -169,27 +169,32 @@ window.onscroll = () => {
 };
 
 let payButton = document.querySelector(".donate-button");
-let money = document.querySelector(".donate-input")
-
+let money = document.querySelector(".donate-input");
 
 payButton.addEventListener("click", () => {
-    fetch("/create-checkout-session", {
-        method: 'POST',
-        body: JSON.stringify({
-            item: [{price_data: {currency: 'usd', product_data: {name: "Donation"}, unit_amount: money.value * 100}, quantity: 1}]
-        }),
-        headers: {
-            "Content-Type": 'application/json'
-        }
-        
-    }).then(
-        res => {
-            if (res.ok) return res.json();
-            return res.json().then(json => Promise.reject(json));
-        }
-    ).then(({ url }) => {
-        window.location = url
-    }).catch(e => console.log(e)
-    )
+    if (money.value >= 5){
+        fetch("/create-checkout-session", {
+            method: 'POST',
+            body: JSON.stringify({
+                item: [{price_data: {currency: 'usd', product_data: {name: "Donation"}, unit_amount: money.value * 100}, quantity: 1}]
+            }),
+            headers: {
+                "Content-Type": 'application/json'
+            }
+            
+        }).then(
+            res => {
+                if (res.ok) return res.json();
+                return res.json().then(json => Promise.reject(json));
+            }
+        ).then(({ url }) => {
+            window.location = url
+        }).catch(e => console.log(e)
+        )
+    } else{
+        console.log("Enter a valid amount");
+    }
+    
 
 })
+    

@@ -76,7 +76,7 @@ main > div:nth-of-type(4){
 
 @media(max-width: 800px){
     main > div:nth-of-type(4){
-        height: 1240px;
+        height: 1150px;
     }
         
     .play-title{
@@ -171,7 +171,7 @@ main > div:nth-of-type(4){
 
 @media (min-width: 801px) and (max-width: 1023px){
     main > div:nth-of-type(4){
-        height: 1100px;
+        height: 1050px;
     }
         
     .play-title{
