@@ -13,8 +13,6 @@ app.use(bodyParser.json());
 
 const stripe = require('stripe')(process.env.PRIVATE_KEY);
 
-const storeItems = new Map([[1, { priceInCents: 500, name: "shirt" }],
-[2, { priceInCents: 400, name: "pants" }]])
 app.post("/create-checkout-session", async (req, res) => {
     try {
         const session = await stripe.checkout.sessions.create({
