@@ -1,18 +1,8 @@
-footer section, #Contact {
+#Contact {
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-footer{
-    background-color: rgb(252, 185, 127);
-}
-
-footer section{
-    background-color: rgb(252, 185, 127);
-    z-index: 100;
-    height: 200px;
 }
 
 #Contact{
@@ -22,12 +12,6 @@ footer section{
 main > div:nth-of-type(6){
     background-color: rgb(252, 185, 127);
     border-bottom: 4px solid white;
-}
-
-footer section{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .contact-form{
@@ -55,7 +39,8 @@ footer section{
         border: 1px solid black;
         margin-bottom: 1rem;
     }
-    footer section, #Contact{
+    
+    #Contact{
         max-width: 475px;
     }
 
@@ -97,7 +82,7 @@ footer section{
 }
 
 @media(min-width: 640px){
-    footer section, #Contact{
+    #Contact{
         max-width: 640px;
     }
 
@@ -124,7 +109,7 @@ footer section{
     }
 }
 @media(min-width: 768px){
-    footer section, #Contact{
+    #Contact{
         max-width: 768px;
     }
 
@@ -164,7 +149,7 @@ footer section{
     }
 }
 @media(min-width: 1024px){
-    footer section, #Contact{
+    #Contact{
         max-width: 1024px;
     }
 
@@ -173,7 +158,7 @@ footer section{
     }
 }
 @media(min-width: 1280px){
-    footer section, #Contact{
+    #Contact{
         max-width: 1280px;
     }
 
@@ -213,7 +198,7 @@ footer section{
     }
 }
 @media(min-width: 1536px){
-    footer section, #Contact{
+    #Contact{
         max-width: 1536px;
     }
 
